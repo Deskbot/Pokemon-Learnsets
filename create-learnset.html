@@ -47,8 +47,8 @@ function objectToString(input) {//recursive function for creating javascript of 
 		output = '[' + output + ']';
 		
 		return output;
-	} else if (typeof input === 'object') {
 		
+	} else if (typeof input === 'object') {
 		var output = '';
 		for (var key in input) {
 			output += key + ': ' + objectToString(input[key]) + ', ';
@@ -66,5 +66,6 @@ function objectToString(input) {//recursive function for creating javascript of 
 		}
 	}
 }
+
 document.write(objectToString(newMoveList));
 </script>
