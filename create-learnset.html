@@ -37,6 +37,15 @@ for (var mon in moveList) {//goes through each Pokémon
 	}
 }
 
+document.write(JSON.stringify(newMoveList));
+
+/*
+ * This function used to be used instead of JSON.stringify() because I didn't know that existed at the time.
+ * I commented it out rather than deleted because I like the fact I actually made this.
+ * The only benefit really is that my function doesn't put double quotes everywhere.
+ * However that does mean that my JSON output only works with JavaScript, so it's better now.
+ * It now also takes up only 1 line and doesn't have all my neat blankspace, saving storage.
+
 function objectToString(input) {//recursive function for creating javascript of an object/array structure
 	if (Object.prototype.toString.call(input) === '[object Array]' ) {
 		var output = '';
@@ -65,6 +74,5 @@ function objectToString(input) {//recursive function for creating javascript of 
 		return input;
 	}
 }
-
-document.write(objectToString(newMoveList));
+*/
 </script>
