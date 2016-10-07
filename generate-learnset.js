@@ -13,6 +13,7 @@ if (targetGen >= 1) {
 		newMoveList[mon].tm = new Array();
 		newMoveList[mon].egg = new Array();
 		newMoveList[mon].tutor = new Array();
+		newMoveList[mon].dreamWorld = new Array();
 		newMoveList[mon].event = new Array();
 		
 		for (var move in moveList[mon]) {//goes through each move
@@ -30,6 +31,8 @@ if (targetGen >= 1) {
 						newMoveList[mon].egg.push(move);
 					} else if (moveVal.substr(1,1) == 'T') {
 						newMoveList[mon].tutor.push(move);
+					} else if (moveVal.substr(1,1) == 'D') {
+						newMoveList[mon].dreamWorld.push(move);
 					} else if (moveVal.substr(1,1) == 'S') {
 						newMoveList[mon].event.push(move);
 					} else {
