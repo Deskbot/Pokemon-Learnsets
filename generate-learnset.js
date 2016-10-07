@@ -40,6 +40,8 @@ if (targetGen >= 1) {
 				}
 			}
 		}
+
+		if (moveCount === 0) delete newMoveList[mon]; //remove Pokémon that don't learn any moves in targetGen
 	}
 	
 	fs.writeFileSync('./output/gen' + targetGen + '.json', JSON.stringify(newMoveList));
