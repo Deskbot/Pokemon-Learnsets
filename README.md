@@ -17,6 +17,8 @@ generation | Integer
 Output
 ------
 
+The result is saved in `./output/` in .json format, under the name `"gen" + generation + ".json"`, with the following structure:
+
     {
     	<pokemon>: {
     		level: {
