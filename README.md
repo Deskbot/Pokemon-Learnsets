@@ -10,7 +10,7 @@ A modified version of [this file](https://github.com/Zarel/Pokemon-Showdown/blob
 
 `node generate-learnsets.js <generation>`
 
-Parameter  | Type
+Parameter  | Format
 -----------|---------
 generation | Integer
 
