@@ -44,7 +44,7 @@ generation   | Integer
 move         | String (Showdown move ID format)
 pokemon      | String (Showdown pokémon ID format)
 
-by Showdown's ID move/pokémon format I mean the name used internally independent of language. They're usually formatted by taking the English name for the move/pokémon making it lower case and removing all non-alphanumeric characters.
+By Showdown's ID move/pokémon format I mean the name used internally independent of language. They're usually formatted by taking the English name for the move/pokémon making it lower case and removing all non-alphanumeric characters.
 
 Requirements
 ------------
